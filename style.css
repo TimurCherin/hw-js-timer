@@ -1,0 +1,11 @@
+.change {
+    background-color: cyan;
+    width: 10px;
+    height: 10px;
+}
+.game {
+    position: absolute;
+    background-color: purple;
+    width: 75px;
+    height: 75px;
+}
