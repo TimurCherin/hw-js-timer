@@ -36,15 +36,9 @@ function positionGame (){
     game.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
     if(time === 25){
         clearInterval(gameInterval)  
-        alert(`Ви програли набравши ${countClicks} балів`)
+        alert(`Ви набрали ${countClicks} балів`)
         game.removeEventListener("click", onClick)
-        score.textContent = `Lose`
-    }
-    if(countClicks === 25){
-        clearInterval(gameInterval)  
-        alert(`Ви перемогли набравши ${countClicks} балів`)
-        game.removeEventListener("click", onClick)
-        score.textContent = `Win`
+        score.textContent = "гра завершина"
     }
 }
 game.addEventListener("click", onClick)
